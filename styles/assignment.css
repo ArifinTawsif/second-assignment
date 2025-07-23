@@ -26,6 +26,13 @@ body {
     display: flex;
 }
 
+.color-orange{
+    color: rgba(233, 90, 8, 1);
+}
+.color-gray{
+    color: rgba(0, 0, 0, 0.5);
+}
+
 /* Header section */
 .parent-container {
     justify-content: space-between;
@@ -60,6 +67,29 @@ header a {
     color: black;
 }
 
+/* banner section-1 styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 221px 150px 120px 150px;
+}
+.banner-content{
+    /* max-width: 150px; */
+}
+.banner-heading{
+    font-weight: bold;
+    font-size: 65px;
+    margin-bottom: 13px;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 22px;
+}
+.banner-pic{
+    width: 550px;
+    height: 350px;
+}
+
 /* Media Query Section */
 @media screen and (max-width:720px) {
     .parent-container, header > ul{
@@ -71,4 +101,3 @@ header a {
     #home, .both{
         display: none;
     }
-}
