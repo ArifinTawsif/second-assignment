@@ -1,7 +1,9 @@
 /* shared styles */
 body {
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .noto-serif {
@@ -20,17 +22,18 @@ body {
   font-weight: weight;
   font-style: normal;
 }
+.display-flex{
+    display: flex;
+}
 
 /* Header section */
 .parent-container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 150px;
 }
 
 header ul {
-    display: flex;
     gap: 48px;
     list-style: none;
 }
@@ -55,4 +58,17 @@ header a {
     font-size: 16px;
     font-weight: 400;
     color: black;
+}
+
+/* Media Query Section */
+@media screen and (max-width:720px) {
+    .parent-container, header > ul{
+        flex-direction: grid;
+        gap: 16px;
+        text-align: center;
+        justify-content: center;
+    }
+    #home, .both{
+        display: none;
+    }
 }
