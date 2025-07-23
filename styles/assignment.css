@@ -167,7 +167,7 @@ header a {
     gap: 60px;
     max-width: 1440px;
 }
-.pic-1{
+.pic1{
     width: 540;
     height: 597px;
 }
@@ -202,7 +202,7 @@ header a {
         justify-content: center;
         text-align: center;
     }
-    .banner-pic{
+    .banner-pic, .pic1 {
         order: 1;
         width: 350px;
         height: 220px;
@@ -211,17 +211,33 @@ header a {
         margin-left: auto;
         margin-right: auto;
     }
-    .banner-content {
+    .banner-content, .context {
         order: 2;
         text-align: center;
         max-width: 600px;
     }
     
-    .card-section{
+    .card-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
+    .flower-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .pic1{
+        margin-bottom: 10px;
+        width: 358px;
+        height: 396px;
+    }
+    .context{
+        margin-top: 10px;
+    }
 }
