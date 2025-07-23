@@ -90,6 +90,17 @@ header a {
     height: 350px;
 }
 /* Card Section */
+.card-section{
+    max-width: 1440px;
+    text-align: center;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 150px;
+    margin-left: auto;
+}
 .card-head{
     width: 100%;
     gap: 20px;
@@ -123,15 +134,6 @@ header a {
     font-size: 22px;
     font-weight: bold;
 }
-.card-section{
-    max-width: 1440px;
-    text-align: center;
-    width: 100%;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 .card-heading{
     font-size: 50px;
     font-weight: bold;
@@ -157,7 +159,26 @@ header a {
     margin-top: 15px;
     margin-bottom: 30px;
 }
-
+/* flower section style */
+.flower-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 210px 150px 120px 133px;
+    gap: 60px;
+    max-width: 1440px;
+}
+.pic-1{
+    width: 540;
+    height: 597px;
+}
+.flower-container h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.flower-container ul li{
+    font-size: 22px;
+    font-weight: 400;
+}
 /* Media Query Section */
 @media screen and (max-width:720px) {
 
