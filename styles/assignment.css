@@ -16,20 +16,22 @@ body {
 }
 
 
-.inter{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
-.display-flex{
+
+.display-flex {
     display: flex;
 }
 
-.color-orange{
+.color-orange {
     color: rgba(233, 90, 8, 1);
 }
-.color-gray{
+
+.color-gray {
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -49,55 +51,88 @@ header a {
     text-decoration: none;
 }
 
-#home{
+#home {
     font-size: 16px;
     font-weight: bold;
     color: #252432;
 }
 
-.both{
+.both {
     font-size: 16px;
     font-weight: 400;
     color: rgba(137, 135, 161, 1);
 }
 
-#cart{
+#cart {
     font-size: 16px;
     font-weight: 400;
     color: black;
 }
 
 /* banner section-1 styles */
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     margin: 221px 150px 120px 150px;
 }
-.banner-content{
+
+.banner-content {
     /* max-width: 150px; */
 }
-.banner-heading{
+
+.banner-heading {
     font-weight: bold;
     font-size: 65px;
     margin-bottom: 13px;
 }
-.banner-description{
+
+.banner-description {
     font-weight: 400;
     font-size: 22px;
 }
-.banner-pic{
+
+.banner-pic {
     width: 550px;
     height: 350px;
 }
 
 /* Media Query Section */
 @media screen and (max-width:720px) {
-    .parent-container, header > ul{
+
+    .parent-container,
+    header>ul {
         flex-direction: grid;
         gap: 16px;
         text-align: center;
         justify-content: center;
     }
-    #home, .both{
+
+    #home,
+    .both {
         display: none;
     }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .banner-pic{
+        order: 1;
+        width: 350px;
+        height: 220px;
+        display: block;
+        margin-bottom: 28px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-content {
+
+        order: 2;
+        text-align: center;
+        max-width: 600px;
+    }
+
+}
