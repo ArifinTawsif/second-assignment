@@ -124,6 +124,7 @@ header a {
     font-weight: bold;
 }
 .card-section{
+    max-width: 1440px;
     text-align: center;
     width: 100%;
     gap: 20px;
@@ -190,10 +191,16 @@ header a {
         margin-right: auto;
     }
     .banner-content {
-
         order: 2;
         text-align: center;
         max-width: 600px;
+    }
+    
+    .card-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 }
